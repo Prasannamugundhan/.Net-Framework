@@ -33,15 +33,11 @@ class program {
   }
 }
 public class User{
-    //members
+    
     private string username;
      private string mailId;
       private string password;
-  //constructors
-  public User()
-  {
-      
-  }
+ 
   
   public User(string username,string mailId,string password)
   {
@@ -49,12 +45,12 @@ public class User{
       MailId=mailId;
       Password=password;
   }
-  //properties
+  
  public string Username { get=> username; set=> username=value; }
  public string MailId { get=> mailId; set=> mailId=value; }
    public string Password { get=> password; set=> password=value; }
     
-    //override
+    
     public override string ToString()
     {
             return string.Format("Username: " + this.Username + "\nEmail: " + this.MailId + "\nPassword: " + this.password);
